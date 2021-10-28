@@ -163,6 +163,9 @@ img {
     line-height: 24px;
 }
 
+.page {
+    height:100%;
+}
 /* Main navigation*/
 .page-header {
     background-color: var(--basic-gray);
