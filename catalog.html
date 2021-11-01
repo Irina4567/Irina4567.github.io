@@ -13,38 +13,39 @@
 
     <body class="page-body">
         <header class="page-header">
-            <nav class="page-navigation">
-                <a href= "index.html" class="page-header-logo">
-                    <img src="img/nerds-logo.svg" width="159.87" height="65.02" alt="Логотип">
-                </a>
-                <ul class="navigation-list">
-                    <li class="navigation-item">
-                        <a href="blank.html">Студия</a>
-                    </li>
-                    <li class="navigation-item">
-                        <a href="blank.html">Клиенты</a>
-                    </li>
-                    <li class="navigation-item">
-                        <a href="catalog.html">Магазин</a>
-                    </li>
-                    <li class="navigation-item">
-                        <a href="blank.html">Контакты</a>
-                    </li>
-                </ul>
-                <div class="user-navigation">
-                    <a class="nav-cart" href="blank.html">
-                        Корзина</a>
-                </div>
-                
-            </nav>
+            <div class="page-header-bar">
+                <nav class="page-navigation page-catalog">
+                    <a href="index.html" class="page-header-logo">
+                        <img src="img/nerds-logo.svg" width="159.87" height="65.02" alt="Логотип">
+                    </a>
+                    <ul class="navigation-list">
+                        <li class="navigation-item">
+                            <a href="index.html">Студия</a>
+                        </li>
+                        <li class="navigation-item">
+                            <a href="blank.html">Клиенты</a>
+                        </li>
+                        <li class="navigation-item">
+                            <a href="catalog.html">Магазин</a>
+                        </li>
+                        <li class="navigation-item">
+                            <a href="blank.html">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="user-navigation">
+                        <a class="nav-cart" href="blank.html">
+                            Корзина</a>
+                    </div>
+                </nav>
+                <section class="name-catalog-page">
+                    <h1>Магазин готовых шаблонов</h1>
+                </section>
+            </div>
         </header>
 
-        <main class="wrapper">
-            <section class="name-catalog-page">
-                <h1>Магазин готовых шаблонов</h1>
-            </section>
+        <main class="wrapper catalog">
             <section class="filter">
-                <h2>Фильтр</h2>
+                <h2 class="visible">Фильтр</h2>
                 <form method="GET" action="https://echo.htmlacademy.ru">
                     <fieldset class="filter-cost">
                         <legend>Стоимость:</legend>
@@ -53,9 +54,9 @@
                             <label>От<input type="text" name="start" value="0"></label>
                             <label>До<input type="text" name="end" value="15000"></label>
                         </p>
-                    
+        
                     </fieldset>
-
+        
                     <fieldset class="filter-grid">
                         <legend>Сетка:</legend>
                         <p>
@@ -77,7 +78,7 @@
                             </label>
                         </p>
                     </fieldset>
-
+        
                     <fieldset class="filter-features">
                         <legend>Особенности:</legend>
                         <p>
@@ -89,7 +90,7 @@
                         <p>
                             <label>
                                 <input type="checkbox" name="
-                                advantages">
+                                                    advantages">
                                 Блок преимуществ
                             </label>
                         </p>
@@ -115,9 +116,9 @@
                     <button class="button button-gray button-black-font" type="submit">Показать</button>
                 </form>
             </section>
-
+            
             <section class="sort">
-                <h2>Сортировка</h2>
+                <h2 class="visible">Сортировка</h2>
                 <p>Сортировать:</p>
                 <ul class="sorting">
                     <li class="sorting-item">
@@ -142,7 +143,7 @@
             </section>
 
             <section class="product-catalog">
-                <h2>Каталог</h2>
+                <h2 class="visible">Каталог</h2>
                 <ul class="product-cards">
                     <li class="product-cards-item">
                         <div class="browser"></div>
@@ -154,7 +155,7 @@
                                 <a class="button button-red button-price" href="#">9 900 p</a>
                             </p>
                         </div>
-                    
+            
                     </li>
                     <li class="product-cards-item">
                         <div class="browser"></div>
@@ -208,7 +209,7 @@
                     </li>
                     <li class="product-cards-item">
                         <div class="browser"></div>
-                        <img src="img/img-kvast.png" width="358" height="578"  alt="КВАСТ">
+                        <img src="img/img-kvast.png" width="358" height="578" alt="КВАСТ">
                         <div class="popup">
                             <a class="name-product" href="#">
                                 Кваст
@@ -241,68 +242,76 @@
 
 
         <footer class="page-footer">
-            <section class="contacts">
-                <h2>Контакты</h2>
-                <span>NЁRDS DESIGN STUDIO</span>
-                <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8
-                </p>
-                <p>
-                    <a class="contacts-phone" href="tel:+78122757575">тел.  +7 (812) 275-75-75</a>
-                </p>
-                <a class="button button-red" href="#">Напишите нам</a>
-                <img class="contact-img" src="img/map-and-marker.png" width="1440" height="416" alt="map">
-            </section>
+            <div class="content-footer-map">
+                <section class="contacts">
+                    <h2 class="visible">Контакты</h2>
+                    <div class="text-position">
+                        <span>NЁRDS DESIGN STUDIO</span>
+                        <p class="adress">наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург
+                        </p>
+                        <p class="phone">
+                            <a class="contacts-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+                        </p>
+                        <a class="button button-red" href="#">Напишите нам</a>
+                    </div>
+                    <img class="contact-img" src="img/map-and-marker.png" width="1440" height="416" alt="map">
+                </section>
+            </div>
+            <div class=wrapper>
+                <div class="index-columns-social">
+                    <section class="social">
+                        <ul class="social-list">
+                            <li class="social-item">
+                                <a class="social-button" href="#">
+                                    <img src="img/icon-vk.svg" width="26.01" height="15" alt="Вконтакте">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a class="social-button" href="#">
+                                    <img src="img/icon-fb.svg" width="12" height="22" alt="Фейсбук">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#">
+                                    <img src="img/icon-insta.svg" width="21" height="21" alt="Инстаграмм">
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
             
-            <section class="social">
-                <ul class="social-list">
-                    <li class="social-item">
-                        <a class="social-button" href="#">
-                            <img src="img/icon-vk.svg" width="26.01" height="15" alt="Вконтакте">
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a class="social-button" href="#">
-                            <img src="img/icon-fb.svg" width="12" height="22" alt="Фейсбук">
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a href="#">
-                            <img src="img/icon-insta.svg" width="21" height="21" alt="Инстаграмм">
-                        </a>
-                    </li>
-                </ul>
-            </section>
+                    <section class="copyright">
+                        <h2 class="visible">Копирайт</h2>
+                        <span>Давайте дружить, это выгодно!</span>
+                        <p>Скидка 10% для друзей из социальных сетей.</p>
+                    </section>
+                </div>
+            </div>
+            </footer>
 
-            <section class="copyright">
-                <h2>Копирайт</h2>
-                <span>Давайте дружить, это выгодно!</span>
-                <p>Скидка 10% для друзей из социальных сетей.</p>
-            </section>
-        </footer>
-
-        <section class="modal">
-            <h2>Напишите нам</h2>
-            <img class="close" src="img/close.svg" width="21" height="21">
-            <form action="https://echo.htmlacademy.ru" method="POST">
-                <p>
-                    <label for="login">Ваше имя:</label>
-                    <input id="login" type="text" name="login"  placeholder="Имя Фамилия">
-                </p>
+            <!--<section class="modal">
+                <h2>Напишите нам</h2>
+                <img class="close" src="img/close.svg" width="21" height="21">
+                <form action="https://echo.htmlacademy.ru" method="POST">
+                    <p>
+                        <label for="login">Ваше имя:</label>
+                        <input id="login" type="text" name="login"  placeholder="Имя Фамилия">
+                    </p>
+    
+                     <p>
+                        <label for="email">Ваш email:</label>
+                        <input id="email" type="email" name="email"  placeholder="email@example.com">
+                    </p>
+                     <p>
+                        <label for="report">Тект письма:</label>
+                        <textarea id="report" name="report"  placeholder="">В cвободной форме</textarea>
+                    </p>
+                    <button class ="button button-red" type="submit">Отправить</button>
+                </form>
                 
-                 <p>
-                    <label for="email">Ваш email:</label>
-                    <input id="email" type="email" name="email"  placeholder="email@example.com">
-                </p>
-                 <p>
-                    <label for="report">Тект письма:</label>
-                    <textarea id="report" name="report"  placeholder="">В cвободной форме</textarea>
-                </p>
-                <button class ="button button-red" type="submit">Отправить</button>
-            </form>
-        </section>
-
+            </section>
+        -->
 
     </body>
 
-    
+
 </html>
