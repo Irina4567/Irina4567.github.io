@@ -56,7 +56,6 @@ form.addEventListener('submit', function(evt) {
     if (!login.value || !email.value || !report.value) {
         evt.preventDefault();
         modal.classList.add('modal-error');
-        console.log('rere');
     } else {
         if (isStorageLoginSupport) {
             localStorage.setItem("login", login.value);
